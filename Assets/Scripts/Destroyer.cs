@@ -6,6 +6,10 @@ public class Destroyer : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        if (collision.GetComponent<RoomSpawner>())
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject, 2f);
+        }
     }
 }
