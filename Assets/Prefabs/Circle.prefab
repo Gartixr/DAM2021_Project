@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6344737178802842508}
   - component: {fileID: 6344737178802842507}
+  - component: {fileID: 7221602058930407400}
   - component: {fileID: 8467220026806846620}
   - component: {fileID: 6344737178802842506}
   - component: {fileID: 6344737178802842505}
@@ -133,6 +134,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7221602058930407400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344737178802842503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0334b1452c5a2f7489e5c98d8620a87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 6344737178802842509}
+  fallBoundary: -20
 --- !u!114 &8467220026806846620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60aa4a1c9f0611419b1e506576bf143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  maxHealth: 100
+  curHealth: 20
   speed: 8
   damage: 3.5
 --- !u!114 &3589780850651632690
