@@ -330,6 +330,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60aa4a1c9f0611419b1e506576bf143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1646239355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6344737178802842505, guid: b286bf90af2e8fe4f88a3b5a110b84bd, type: 3}
+  m_PrefabInstance: {fileID: 2081064282}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219f6a379b5510944ae68b3cc0f40a92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1847231456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,6 +351,18 @@ PrefabInstance:
     - target: {fileID: 424101816956212491, guid: 8e72048c42f0b9943b7f5ec88bbf03e1, type: 3}
       propertyPath: damage
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424101816956212491, guid: 8e72048c42f0b9943b7f5ec88bbf03e1, type: 3}
+      propertyPath: knockbackPower
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 424101816956212491, guid: 8e72048c42f0b9943b7f5ec88bbf03e1, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1646239355}
+    - target: {fileID: 424101816956212491, guid: 8e72048c42f0b9943b7f5ec88bbf03e1, type: 3}
+      propertyPath: knockbackDuration
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 737021045220968150, guid: 8e72048c42f0b9943b7f5ec88bbf03e1, type: 3}
       propertyPath: m_RootOrder
