@@ -328,6 +328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EntryRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 2118403006880568571, guid: e0f0011210d27fe40bac98b6e5f6794a, type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 9171824948427950229, guid: e0f0011210d27fe40bac98b6e5f6794a, type: 3}
       propertyPath: m_RootOrder
       value: 1
