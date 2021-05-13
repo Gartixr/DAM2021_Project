@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int life;
+    public int maxHealth = 100;
+    public int curHealth;
     public float speed = 6.5f;
     public float damage;
-    
-    public int GetLife()
+
+    public void Init()
     {
-        return this.life;
+        curHealth = maxHealth;
+    }
+    public int GetCurHealth()
+    {
+        return this.curHealth;
     }
     public float GetSpeed()
     {
@@ -20,15 +25,15 @@ public class PlayerStats : MonoBehaviour
     {
         return this.damage;
     }
-    public void SetLife(int life)
+    public void SetCurHealth(int health)
     {
-        this.life = life;
+        this.curHealth = Mathf.Clamp(health, 0, maxHealth);
     }
-    public void SetSpeed(int speed)
+    public void SetSpeed(float speed)
     {
         this.speed = speed;
     }
-    public void SetDamage(int damage)
+    public void SetDamage(float damage)
     {
         this.damage = damage;
     }
