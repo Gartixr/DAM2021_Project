@@ -12,13 +12,13 @@ public class CameraMovment : MonoBehaviour
             if (position == 1)
             {
 
-            } else if ()
+            } else if (position == 2)
             {
 
-            } else if ()
+            } else if (position == 3)
             {
 
-            } else if ()
+            } else if (position == 4)
             {
 
             }
