@@ -12,11 +12,11 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", 2f);
+        Invoke("Spawn", 0.1f);
     }
     void Spawn()
     {
-        if (spawned == false)
+        if (!spawned)
         {
             if (openingDirection == 1)
             {
@@ -41,11 +41,12 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("SpawnPoint"))
         {
-            if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            // other.GetComponent<RoomSpawner>().spawned == false &&
+            if (!spawned && !other.GetComponent<RoomSpawner>().spawned)
             {
                 Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 Destroy(gameObject);
