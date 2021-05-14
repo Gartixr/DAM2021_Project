@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     public int damage = 20;
     public GameObject deathEffect;
-    public PlayerMovement playerMovement;
     public float knockbackDuration = 1; 
     public float knockbackPower = 100;
     
@@ -32,6 +31,7 @@ public class Enemy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D colInfo)
     {
         Player _player = colInfo.collider.GetComponent<Player>();
+        PlayerMovement playerMovement = colInfo.collider.GetComponent<PlayerMovement>();
         if (_player)
         {
             _player.DamagePlayer(damage);
