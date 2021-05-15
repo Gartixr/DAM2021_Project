@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator Knockback(float knockbackDuration, float KnockbackPower, Transform obj)
     {
         float timer = 0;
-        while (knockbackDuration > timer)
+        while (this != null && knockbackDuration > timer)
         {
             timer += Time.deltaTime;
             Vector2 direction = (obj.transform.position - this.transform.position).normalized;

@@ -34,8 +34,8 @@ public class Enemy : MonoBehaviour
         PlayerMovement playerMovement = colInfo.collider.GetComponent<PlayerMovement>();
         if (_player)
         {
-            _player.DamagePlayer(damage);
             StartCoroutine(playerMovement.Knockback(knockbackDuration, knockbackPower, this.transform));
+            _player.DamagePlayer(damage);
         }
     }
 }
