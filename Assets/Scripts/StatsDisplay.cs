@@ -11,8 +11,8 @@ public class StatsDisplay : MonoBehaviour
     public TextMeshProUGUI damageText;
     void Update()
     {
-        healthText.text = "Health ❤: " + playerStats.curHealth;
-        speedText.text = "Speed 👟: " + playerStats.speed;
-        damageText.text = "Damage 🔪: " + playerStats.damage;
+        healthText.text = "Health : " + playerStats.curHealth;
+        speedText.text = "Speed : " + playerStats.speed;
+        damageText.text = "Damage : " + playerStats.damage;
     }
 }

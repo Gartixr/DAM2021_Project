@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public float knockbackDuration = 1; 
     public float knockbackPower = 100;
-    
+    public PlayerStats playerStats;
     // Start is called before the first frame update
 
     public void TakeDamage(int damage)
@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
+        playerStats.countEnemyKilled = ++playerStats.countEnemyKilled;
         Destroy(gameObject);
     }
 
