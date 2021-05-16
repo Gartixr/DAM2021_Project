@@ -11,6 +11,7 @@ public class HealthUp : MonoBehaviour
         if (playerStats)
         { 
             playerStats.SetCurHealth(playerStats.GetCurHealth() + health);
+            playerStats.CountHealthCup = ++playerStats.CountHealthCup;
             Destroy(gameObject);
         }
     }

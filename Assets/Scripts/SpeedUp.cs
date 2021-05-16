@@ -11,6 +11,7 @@ public class SpeedUp : MonoBehaviour
         if (playerStats)
         { 
             playerStats.SetSpeed(playerStats.GetSpeed() + speed);
+            playerStats.CountSpeedCup = ++playerStats.CountSpeedCup;
             Destroy(gameObject);
         }
     }

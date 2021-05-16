@@ -8,6 +8,34 @@ public class PlayerStats : MonoBehaviour
     public int curHealth;
     public float speed = 6.5f;
     public float damage;
+    public int countHealthCup = 0;
+    public int countSpeedCup = 0;
+    public int countDamageCup = 0;
+    public int countEnemyKilled = 0;
+
+    public int CountHealthCup
+    {
+        get => countHealthCup;
+        set => countHealthCup = value;
+    }
+
+    public int CountSpeedCup
+    {
+        get => countSpeedCup;
+        set => countSpeedCup = value;
+    }
+
+    public int CountDamageCup
+    {
+        get => countDamageCup;
+        set => countDamageCup = value;
+    }
+
+    public int CountEnemyKilled
+    {
+        get => countEnemyKilled;
+        set => countEnemyKilled = value;
+    }
 
     public void Init()
     {

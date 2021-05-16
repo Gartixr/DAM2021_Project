@@ -61,8 +61,9 @@ GameObject:
   - component: {fileID: 6344737178802842504}
   - component: {fileID: 6344737178802842509}
   - component: {fileID: 3589780850651632690}
+  - component: {fileID: 394532935}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 6344737178802842509}
   fallBoundary: -20
+  menuDeath: {fileID: 0}
 --- !u!114 &8467220026806846620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +235,10 @@ MonoBehaviour:
   curHealth: 20
   speed: 4
   damage: 3.5
+  countHealthCup: 0
+  countSpeedCup: 0
+  countDamageCup: 0
+  countEnemyKilled: 0
 --- !u!114 &3589780850651632690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +251,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527bc87a36caf394dab878e3ca68e8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &394532935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6344737178802842503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c949949513a4f34a84ec0866fd6a211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPause: {fileID: 0}
 --- !u!1 &7971941662627043572
 GameObject:
   m_ObjectHideFlags: 0

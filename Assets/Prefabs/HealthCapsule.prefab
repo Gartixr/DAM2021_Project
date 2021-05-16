@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4100302991707786651}
   - component: {fileID: 4100302991707786650}
+  - component: {fileID: 4221001904821421413}
   - component: {fileID: 4100302991707786649}
   m_Layer: 0
   m_Name: HealthCapsule
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
   m_Color: {r: 0.9852556, g: 0.6933962, b: 1, a: 1}
   m_FlipX: 0
@@ -83,6 +84,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4221001904821421413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100302991707786648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ed1ac7d3b55f9488066a48665e0a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
 --- !u!70 &4100302991707786649
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

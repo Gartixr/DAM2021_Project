@@ -11,6 +11,7 @@ public class DamageUp : MonoBehaviour
         if (playerStats)
         { 
             playerStats.SetDamage(playerStats.GetDamage() + damage);
+            playerStats.CountDamageCup = ++playerStats.CountDamageCup;
             Destroy(gameObject);
         }
     }
