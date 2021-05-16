@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public PlayerStats playerStats;
     public int fallBoundary = -20;
+    public MenuDeath menuDeath;
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
         if (playerStats.curHealth <= 0)
         {
             Destroy(gameObject);
+            menuDeath.gameObject.SetActive(true);
         }
     }
     
