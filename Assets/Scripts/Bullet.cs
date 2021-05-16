@@ -24,8 +24,15 @@ public class Bullet : MonoBehaviour
             Debug.Log("hit");
             enemy.TakeDamage(damage);
         }
-        GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effect, 1f);
-        Destroy(gameObject);
+
+
+        if (!hitInfo.CompareTag("Floor"))
+        {
+            GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effect, 1f);
+            Destroy(gameObject);
+        }
+
+
     }
 }
