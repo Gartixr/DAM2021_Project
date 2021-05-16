@@ -16,15 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
-        // if (movement.x > 0 && m_facingRight)
-        // {
-        //     Flip();
-        // }
-        // else if(movement.x < 0 && !m_facingRight)
-        // {
-        //     Flip();
-        // } 
+        movement.Normalize();
 
     }
 
@@ -33,9 +25,16 @@ public class PlayerMovement : MonoBehaviour
         rb2d.MovePosition(rb2d.position + movement * playerStats.GetSpeed() * Time.fixedDeltaTime);
     }
 
-    private void Flip()
+    public IEnumerator Knockback(float knockbackDuration, float KnockbackPower, Transform obj)
     {
-        m_facingRight = !m_facingRight;
-        transform.Rotate(0f, 180f, 0f);
+        float timer = 0;
+        while (this != null && knockbackDuration > timer)
+        {
+            timer += Time.deltaTime;
+            Vector2 direction = (obj.transform.position - this.transform.position).normalized;
+            rb2d.AddForce(-direction * KnockbackPower);
+
+            yield return 0;
+        }
     }
 }
