@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 7540274364407731044}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,12 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc6bee42acb8764abe24651290e5a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMarker: {x: 0, y: 0}
-  endMarker: {x: 0, y: 0}
   speed: 50
-  startTime: 0
-  journeyLength: 0
-  leaveRoom: 0
 --- !u!1 &4126859563375410602
 GameObject:
   m_ObjectHideFlags: 0
