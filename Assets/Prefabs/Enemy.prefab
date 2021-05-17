@@ -104,7 +104,7 @@ MonoBehaviour:
   deathEffect: {fileID: 2366415309021467220, guid: d19444e40df2ec14a87e7bfcbb9d4908, type: 3}
   knockbackDuration: 0.3
   knockbackPower: 30
-  playerStats: {fileID: 0}
+  playerStats: {fileID: 6344737178802842509, guid: b286bf90af2e8fe4f88a3b5a110b84bd, type: 3}
 --- !u!50 &1561501092570487091
 Rigidbody2D:
   serializedVersion: 4

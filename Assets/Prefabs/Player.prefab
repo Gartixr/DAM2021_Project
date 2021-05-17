@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 6344737178802842509}
   fallBoundary: -20
-  menuDeath: {fileID: 0}
+  menuDeath: {fileID: 8839578031919061089, guid: 1b22d3543a895d6438dd5724b81cbc3f, type: 3}
 --- !u!114 &8467220026806846620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c949949513a4f34a84ec0866fd6a211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuPause: {fileID: 0}
+  menuPause: {fileID: 76503771235388666, guid: 845826d035598164e9e81aa12cbd71be, type: 3}
 --- !u!1 &7971941662627043572
 GameObject:
   m_ObjectHideFlags: 0
