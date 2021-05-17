@@ -2348,8 +2348,8 @@ GameObject:
   m_Component:
   - component: {fileID: 74669643244485188}
   m_Layer: 0
-  m_Name: Walls (2)
-  m_TagString: Untagged
+  m_Name: Walls
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

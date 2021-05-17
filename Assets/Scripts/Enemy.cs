@@ -31,7 +31,6 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D colInfo)
     {
-        Debug.Log("A");
         Player _player = colInfo.collider.GetComponent<Player>();
         PlayerMovement playerMovement = colInfo.collider.GetComponent<PlayerMovement>();
         if (_player)

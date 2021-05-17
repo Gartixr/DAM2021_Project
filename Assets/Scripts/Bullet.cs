@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
         }
 
 
-        if (!hitInfo.CompareTag("Floor"))
+        if (hitInfo.CompareTag("Enemy") || hitInfo.CompareTag("Walls") || hitInfo.CompareTag("Doors"))
         {
             GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(effect, 1f);
